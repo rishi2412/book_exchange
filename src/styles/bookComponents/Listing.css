@@ -32,3 +32,8 @@ li:hover {
     justify-content: space-between;
 }
 
+.popup-content{
+    display: flex;
+    justify-content: space-between;
+}
+

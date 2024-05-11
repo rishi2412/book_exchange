@@ -59,7 +59,6 @@ const Listing = () => {
             {showPopup && (
                     <div className="popup">
                         <div className="popup-content">
-                            <span className="close" onClick={() => setShowPopup(false)}>&times;</span>
                             <h3>Enter New Entity Name:</h3>
                             <input
                                 type="text"
@@ -68,6 +67,7 @@ const Listing = () => {
                                 placeholder="Enter new entity name"
                             />
                             <button onClick={addEntity}>Submit</button>
+                            <span className="close" onClick={() => setShowPopup(false)}>&times;</span>
                         </div>
                     </div>
                 )}

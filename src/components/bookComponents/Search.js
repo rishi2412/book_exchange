@@ -18,11 +18,11 @@ const Search = () => {
         }
     };
     return (
-        <div>
+        <div >
             <h2>Search</h2>
             <form onSubmit={handleSearch}>
-                <div>
-                    <label htmlFor="searchTerm">Search_Entity:</label>
+                <label htmlFor="searchTerm">Search_Entity: </label>
+                <div className='search'>
                     <input
                         type="text"
                         id="searchTerm"
@@ -30,9 +30,7 @@ const Search = () => {
                         onChange={(e) => setSearchTerm(e.target.value)}
                         required
                     />
-                </div>
-                <div>
-                    <button type="submit">Search</button>
+                    <button type="submit"> Search</button>
                 </div>
             </form>
             {searchResults.length > 0 &&

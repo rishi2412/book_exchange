@@ -12,9 +12,7 @@ class Auth extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        // Here you can add code to handle form submission, such as sending data to a server
         console.log('Submitted:', this.state);
-        // Reset form fields after submission
         this.setState({
             username: '',
             password: ''
